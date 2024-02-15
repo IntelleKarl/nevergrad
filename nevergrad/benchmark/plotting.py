@@ -261,7 +261,7 @@ def create_plots(
             "num_objectives",
         ):
             try:
-                df[col] = df[col].astype(float).astype(int)
+                df[col] = df[col].astype(float).astype(np.int64)
             except Exception as e1:
                 try:
                     for i in range(len(df[col])):
